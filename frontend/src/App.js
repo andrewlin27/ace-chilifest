@@ -10,13 +10,13 @@ function App() {
 
   return (
     <div>
-      <nav className="sticky">
-        <ul className='list-inline'>
+      <nav className="sticky flex justify-center bg-gray-100 py-4 shadow">
+        <ul className='list-inline flex space x-8'>
           <li>
-            <a href="#home" className='hover:text-blue-500'>
+            <a href="#home" className='hover:text-blue-500 text-lg font-semibold'>
               Home
             </a>
-            <a href="/ticket-info" className='hover:text-blue-500'>
+            <a href="#ticket-info" className='hover:text-blue-500'>
               Ticket Info
             </a>
           </li>
@@ -24,8 +24,8 @@ function App() {
       </nav>
 
       <main>
-        <section id="home" className="section">
-          <h1 className="text-6xl text-red-500">ACE Chilifest</h1>
+        <section id="home" className="h-screen flex flex-col justify-center items-center">
+          <h1 className="text-6xl text-red-500">80's IN ACEPEN</h1>
           <button
             className="bg-purple-500 hover:bg-blue-700 text-white"
             onClick={func}
@@ -34,11 +34,11 @@ function App() {
           </button>
         </section>
 
-        <section id="ticket-info" className="section">
+        <section id="ticket-info" className="section h-screen">
           <TicketInfo />
         </section>
 
-        <section id="hello" className="section">
+        <section id="hello" className="section h-creen">
           <Hello />
         </section>
       </main>
