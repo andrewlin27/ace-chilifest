@@ -25,7 +25,15 @@ function App() {
 
       <main>
         <section id="home" className="h-screen flex flex-col justify-center items-center">
-          <h1 className="text-6xl text-red-500">80's IN ACEPEN</h1>
+          {/* <h1 className="text-8xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-purple-500 text-stroke">80's IN ACEPEN</h1> */}
+          {/* <h1 className="text-8xl font-extrabold text-transparent relative">
+            <span className="absolute inset-0 bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-stroke">
+              80's IN ACEPEN
+            </span>
+          </h1> */}
+          <h1 className="text-8xl font-extrabold text-transparent relative custom-outline">
+            80's IN ACEPEN
+          </h1>
           <button
             className="bg-purple-500 hover:bg-blue-700 text-white"
             onClick={func}
