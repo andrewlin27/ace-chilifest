@@ -1,6 +1,7 @@
 import React from 'react';
+import { Link } from 'react-scroll';
 import Hello from './components/Hello'
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import TicketInfo from './components/TicketInfo';
 
 function App() {
@@ -13,12 +14,22 @@ function App() {
       <nav className="sticky flex justify-center bg-gray-100 py-4 shadow">
         <ul className='list-inline flex space x-8'>
           <li>
-            <a href="#home" className='hover:text-blue-500 text-lg font-semibold'>
+            <Link
+              to="home"
+              smooth={true}
+              duration={500}
+              className="hover:text-blue-500"
+            >
               Home
-            </a>
-            <a href="#ticket-info" className='hover:text-blue-500'>
+            </Link>
+            <Link
+              to="ticket-info"
+              smooth={true}
+              duration={500}
+              className="hover:text-blue-500"
+            >
               Ticket Info
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>

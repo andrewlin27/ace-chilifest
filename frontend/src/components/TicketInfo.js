@@ -4,9 +4,8 @@ function TicketInfo() {
     return (
         <div>
             <div className='flex flex-row justify-center items-center gap-8'>
-                <div className='flex flex-col justify-center items-start w-1/2'>
-                    <div className='underline'>What's Included with My Ticket?</div>
-                    <div className='italic'>Insert graphic over what is included in ticket here</div>
+                <div className="text-4xl font-extrabold text-transparent bg-gradient-to-r from-lightblue-400 to-purple-800 bg-clip-text underline" style={{ fontFamily: 'Press Start 2P', textDecoration: 'underline' }}>
+                    What's Included with My Ticket?
                 </div>
                 <div className='w-1/2 flex justify-center'>
                     <img
