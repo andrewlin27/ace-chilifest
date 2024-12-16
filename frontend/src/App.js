@@ -24,14 +24,9 @@ function App() {
       </nav>
 
       <main>
-        <section id="home" className="h-screen flex flex-col justify-center items-center">
+        <section id="home" className="h-screen flex flex-col justify-center items-center bg-[url('../public/IMG_6956.JPEG')] bg-cover bg-center">
           {/* <h1 className="text-8xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-purple-500 text-stroke">80's IN ACEPEN</h1> */}
-          {/* <h1 className="text-8xl font-extrabold text-transparent relative">
-            <span className="absolute inset-0 bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-stroke">
-              80's IN ACEPEN
-            </span>
-          </h1> */}
-          <h1 className="text-8xl font-extrabold text-transparent relative custom-outline">
+          <h1 className="relative text-8xl font-extrabold text-transparent custom-outline">
             80's IN ACEPEN
           </h1>
           <button
