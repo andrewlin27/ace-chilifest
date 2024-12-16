@@ -3,7 +3,28 @@
 @tailwind utilities;
 
 .custom-outline {
-    -webkit-text-stroke: 2px white; /* Solid border with the desired color */
-    color: transparent; /* Keeps the text transparent */
+    -webkit-text-stroke: 2px white;
+    color: transparent;
   }
   
+  @layer utilities {
+
+    .fade-bg {
+        position: relative;
+    }
+
+    .fade-bg::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, transparent 0%, white 100%);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.5s ease-in-out;
+      z-index: 1;
+    }
+  
+    .fade-bg.blend-active::after {
+      opacity: 1;
+    }
+  }
