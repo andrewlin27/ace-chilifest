@@ -1,0 +1,19 @@
+html {
+    scroll-behavior: smooth;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+body {
+    margin: 0 auto;
+}
+
+.text-stroke {
+    -webkit-text-stroke: 2px #fff; /* Border color */
+    text-stroke: 2px transparent; /* For non-webkit browsers */
+  
+}
