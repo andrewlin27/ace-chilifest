@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link, animateScroll as scroll } from 'react-scroll';
 import Hello from './components/Hello'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -8,6 +8,27 @@ function App() {
   const func = () => {
     console.log(process.env.REACT_APP_TEST);
   }
+
+  const [blendOpacity, setBlendOpacity] = useState(1);
+
+  // function to fade background image to get transition between sections
+  useEffect(() => {
+    const handleScroll = () => {
+      const section1 = document.getElementById('home');
+      const sectionHeight = section1.offsetHeight;
+      const scrollY = window.scrollY;
+
+      const opacity = Math.max(1 - scrollY / (sectionHeight / 2), 0);
+      setBlendOpacity(opacity);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
 
   return (
     <div>
@@ -47,8 +68,15 @@ function App() {
       </nav>
 
       <main>
-        <section id="home" className="h-screen flex flex-col justify-center items-center bg-[url('../public/IMG_6956.JPEG')] bg-cover bg-center">
-          {/* <h1 className="text-8xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-purple-500 text-stroke">80's IN ACEPEN</h1> */}
+        <section
+          id="home"
+          className="h-screen flex flex-col justify-center items-center bg-[url('../public/IMG_6956.JPEG')] bg-cover bg-center fade-bg"
+          style={{
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            opacity: blendOpacity, 
+            transition: 'opacity 0.2s ease-out',
+          }}>
           <h1 className="relative text-8xl font-extrabold text-transparent custom-outline">
             80's IN ACEPEN
           </h1>
