@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link } from 'react-scroll';
+import React, { useEffect } from 'react';
+import { Link, animateScroll as scroll } from 'react-scroll';
 import Hello from './components/Hello'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import TicketInfo from './components/TicketInfo';
@@ -11,22 +11,34 @@ function App() {
 
   return (
     <div>
-      <nav className="sticky flex justify-center bg-gray-100 py-4 shadow">
+
+      <style>
+        {`
+          body, html {
+            margin: 0;
+            padding: 0;
+          }
+        `}
+      </style>
+
+      <nav className="fixed top-0 left-0 right-0 flex justify-center py-4 bg-transparent z-10">
         <ul className='list-inline flex space x-8'>
-          <li>
+          <li className='text-white font-semibold py-2 px-4 rounded-lg shadlow-lg transition-all duration-300'>
             <Link
               to="home"
               smooth={true}
               duration={500}
-              className="hover:text-blue-500"
+              className="hover:text-blue-500 transition-colors ease-in-out duration-300"
             >
               Home
             </Link>
+          </li>
+          <li className='text-white font-semibold py-2 px-4 rounded-lg shadlow-lg transition-all duration-300'>
             <Link
               to="ticket-info"
               smooth={true}
               duration={500}
-              className="hover:text-blue-500"
+              className="hover:text-blue-500 transition-colors ease-in-out duration-300"
             >
               Ticket Info
             </Link>
