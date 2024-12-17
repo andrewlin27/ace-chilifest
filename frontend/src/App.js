@@ -3,6 +3,7 @@ import { Link, animateScroll as scroll } from 'react-scroll';
 import Hello from './components/Hello'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import TicketInfo from './components/TicketInfo';
+import TicketItems from './components/TicketItems';
 
 function App() {
   const func = () => {
@@ -93,7 +94,7 @@ function App() {
         </section>
 
         <section id="hello" className="section h-creen">
-          <Hello />
+          <TicketItems />
         </section>
       </main>
     </div>

@@ -2,7 +2,12 @@ import React from 'react'
 
 const Hello = () => {
   return (
-    <div className='underline'>Buy our ticket</div>
+    <div>
+      <div>Fanny Pack</div>
+      <div>Goggles</div>
+      <div>T-shirt</div>
+      <div>Coozie</div>
+    </div>
   )
 }
 
