@@ -81,12 +81,6 @@ function App() {
           <h1 className="relative text-8xl font-extrabold text-transparent custom-outline">
             80's IN ACEPEN
           </h1>
-          <button
-            className="bg-purple-500 hover:bg-blue-700 text-white"
-            onClick={func}
-          >
-            .env test
-          </button>
         </section>
 
         <section id="ticket-info" className="section h-screen">

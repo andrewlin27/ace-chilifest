@@ -38,18 +38,30 @@ const TicketItems = () => {
     }, []);
 
     return (
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center"
+        style={{
+            background: 'linear-gradient(to bottom, lightblue, purple)',
+            WebitkitBackgroundClip: 'text',
+            backgroundClip: 'text',
+            color: 'transparent',
+            backgroundSize: '100% 400%',
+        }}
+        >
             {items.map((item, index) => (
                 <div
                     key={index}
                     data-index={index}
                     ref={(el) => (itemRefs.current[index] = el)}
-                    className={`opacity-0 transform transition-all duration-700 ${visibleItems.includes(String(index))
-                        ? 'opacity-100 translate-y-0'
-                        : 'opacity-0 translate-y-10'
+                    className={`opacity-0 transform transition-all duration-700 text-4xl font-extrabold text-transparent 
+                        bg-gradient-to-b from-lightblue-400 to-pink-800 bg-clip-text ${visibleItems.includes(String(index))
+                            ? 'opacity-100 translate-y-0'
+                            : 'opacity-0 translate-y-10'
                         }`}
                     style={{
-                        marginBottom: '1rem',
+                        marginBottom: '200px',
+                        backgroundSize: '100% 400%',
+                        backgroundPosition: `0 ${(index / items.length) * 100}% `
+
                     }}
                 >
                     {item}
