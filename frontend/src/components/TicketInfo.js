@@ -11,6 +11,7 @@ function TicketInfo() {
                     <img
                         src="IMG_6958.JPEG"
                         className='w-3/5 rounded-lg shadow-lg'
+                        alt="Ticket Info"
                     />
                 </div>
             </div>
