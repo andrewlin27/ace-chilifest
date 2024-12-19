@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import { Link as ScrollLink } from 'react-scroll';
-import { Link as RouterLink } from 'react-router-dom';
+import Navbar from './Navbar';
 import TicketInfo from './TicketInfo';
 import TicketItems from './TicketItems';
 import ACEtoberfest from './ACEtoberfest';
 import Bikini from './Bikini';
+import Tickets from './Tickets';
 
 const Home = () => {
 
@@ -41,37 +41,7 @@ const Home = () => {
         `}
       </style>
 
-      <nav className="fixed top-0 left-0 right-0 flex justify-center py-4 bg-transparent z-10">
-        <ul className='list-inline flex space x-8'>
-          <li className='text-white font-semibold py-2 px-4 rounded-lg shadlow-lg transition-all duration-300'>
-            <ScrollLink
-              to="home"
-              smooth={true}
-              duration={500}
-              className="hover:text-blue-500 transition-colors ease-in-out duration-300">
-              Home
-            </ScrollLink>
-          </li>
-          <li className='text-white font-semibold py-2 px-4 rounded-lg shadlow-lg transition-all duration-300'>
-            <ScrollLink
-              to="ticket-info"
-              smooth={true}
-              duration={500}
-              className="hover:text-blue-500 transition-colors ease-in-out duration-300">
-              Ticket Info
-            </ScrollLink>
-          </li>
-          <li className='text-white font-semibold py-2 px-4 rounded-lg shadlow-lg transition-all duration-300'>
-            <RouterLink
-              to="/tickets"
-              smooth={true}
-              duration={500}
-              className="hover:text-blue-500 transition-colors ease-in-out duration-300">
-              Tickets
-            </RouterLink>
-          </li>
-        </ul>
-      </nav>
+      <Navbar />
 
       <main>
         <section
@@ -102,6 +72,10 @@ const Home = () => {
 
         <section id="bikini" className="section h-screen">
           <Bikini />
+        </section>
+
+        <section id="tickets" className="section h-screen">
+          <Tickets />
         </section>
       </main>
     </div>
