@@ -83,8 +83,8 @@ const Home = () => {
             opacity: blendOpacity,
             transition: 'opacity 0.2s ease-out',
           }}>
-          <h1 className="relative text-8xl font-extrabold text-transparent custom-outline">
-            80's IN ACEPEN
+          <h1 className="relative font-extrabold text-8xl bg-clip-text animate-neon-flash">
+            80's in ACEpen
           </h1>
         </section>
 

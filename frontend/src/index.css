@@ -3,28 +3,33 @@
 @tailwind utilities;
 
 .custom-outline {
-    -webkit-text-stroke: 2px white;
-    color: transparent;
-  }
-  
-  @layer utilities {
+  -webkit-text-stroke: 2px white;
+  color: transparent;
+}
 
-    .fade-bg {
-        position: relative;
-    }
+@layer utilities {
 
-    .fade-bg::after {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(to bottom, transparent 0%, white 100%);
-      opacity: 0;
-      pointer-events: none;
-      transition: opacity 0.5s ease-in-out;
-      z-index: 1;
-    }
-  
-    .fade-bg.blend-active::after {
-      opacity: 1;
-    }
+  .fade-bg {
+    position: relative;
   }
+
+  .fade-bg::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, transparent 0%, white 100%);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease-in-out;
+    z-index: 1;
+  }
+
+  .fade-bg.blend-active::after {
+    opacity: 1;
+  }
+
+  .text-shadow-neon {
+    text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 40px #ff00ff, 0 0 80px #ff00ff;
+  }
+
+}
