@@ -3,6 +3,8 @@ import { Link as ScrollLink } from 'react-scroll';
 import { Link as RouterLink } from 'react-router-dom';
 import TicketInfo from './TicketInfo';
 import TicketItems from './TicketItems';
+import ACEtoberfest from './ACEtoberfest';
+import Bikini from './Bikini';
 
 const Home = () => {
 
@@ -60,12 +62,12 @@ const Home = () => {
             </ScrollLink>
           </li>
           <li className='text-white font-semibold py-2 px-4 rounded-lg shadlow-lg transition-all duration-300'>
-            <RouterLink 
-                to="/tickets"
-                smooth={true}
-                duration={500}
-                className="hover:text-blue-500 transition-colors ease-in-out duration-300"> 
-                Tickets
+            <RouterLink
+              to="/tickets"
+              smooth={true}
+              duration={500}
+              className="hover:text-blue-500 transition-colors ease-in-out duration-300">
+              Tickets
             </RouterLink>
           </li>
         </ul>
@@ -78,7 +80,7 @@ const Home = () => {
           style={{
             backgroundSize: 'cover',
             backgroundPosition: 'center',
-            opacity: blendOpacity, 
+            opacity: blendOpacity,
             transition: 'opacity 0.2s ease-out',
           }}>
           <h1 className="relative text-8xl font-extrabold text-transparent custom-outline">
@@ -92,6 +94,14 @@ const Home = () => {
 
         <section id="ticket-items" className="section h-creen">
           <TicketItems />
+        </section>
+
+        <section id="ace-toberfest" className="section h-screen">
+          <ACEtoberfest />
+        </section>
+
+        <section id="bikini" className="section h-screen">
+          <Bikini />
         </section>
       </main>
     </div>

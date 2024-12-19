@@ -6,7 +6,7 @@ const TicketItems = () => {
         'Fanny Pack',
         'Goggles',
         'T-shirt',
-        'Coozie'
+        'Koozie'
     ];
     const [visibleItems, setVisibleItems] = React.useState(items);
     const itemRefs = useRef([]);

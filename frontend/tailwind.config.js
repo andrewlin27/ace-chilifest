@@ -5,6 +5,11 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        fraktur: ['"UnifrakturMaguntia"', 'cursive'],
+        gothic: ['"Old English Text MT"', 'serif'],
+        modern: ['"Roboto"', 'sans-serif'],
+      },
       colors: {
         lightblue: {
           400: '#7EC8E3',
