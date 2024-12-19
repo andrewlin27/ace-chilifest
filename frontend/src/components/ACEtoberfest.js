@@ -18,14 +18,17 @@ function ACEtoberfest() {
     const imageContainerRef = useRef(null);
     const imageRef = useRef(null);
     const [imageWidth, setImageWidth] = useState(0);
+    const imageCycleRef = useRef(null);
 
     useEffect(() => {
         const observer = new IntersectionObserver(
             ([entry]) => {
                 if (entry.isIntersecting) {
                     setIsVisible(true);
+                    startFadingImages();
                 } else {
                     setIsVisible(false);
+                    clearInterval(imageCycleRef.current);
                 }
             },
             {
@@ -43,6 +46,7 @@ function ACEtoberfest() {
             if (sectionRef.current) {
                 observer.unobserve(sectionRef.current);
             }
+            clearInterval(imageCycleRef.current);
         }
     }, []);
 
@@ -52,10 +56,8 @@ function ACEtoberfest() {
         }
     };
 
-    useEffect(() => {
-        if (!isVisible) return;
-
-        const interval = setInterval(() => {
+    const startFadingImages = () => {
+        imageCycleRef.current = setInterval(() => {
             const containerWidth = imageContainerRef.current?.getBoundingClientRect().width || window.innerWidth;
             const containerHeight = imageContainerRef.current?.getBoundingClientRect().height || window.innerHeight;
             const randomIndex = Math.floor(Math.random() * images.length);
@@ -74,10 +76,10 @@ function ACEtoberfest() {
 
                 const safeMaxLeft = Math.max(0, maxLeft);
                 const safeMaxTop = Math.max(0, maxTop);
-    
+
                 const randomTop = Math.floor(Math.random() * safeMaxTop) + padding / 2 + innerMargin;
                 const randomLeft = Math.floor(Math.random() * safeMaxLeft) + (padding + innerMargin);
-    
+
                 setRandomImage(images[randomIndex]);
                 setPosition({ top: randomTop, left: randomLeft });
 
@@ -89,24 +91,18 @@ function ACEtoberfest() {
 
                 setTimeout(() => setRandomImage(null), 2500);
             };
-
         }, 3000);
-
-        return () => clearInterval(interval);
-    }, [isVisible]);
+    }
 
 
     return (
         <div>
             <div
                 ref={sectionRef}
-                className={`flex flex-col justify-center items-center min-h-screen bg-gradient-to-b from-yellow-300 to-yellow-500 transition-opacity duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}
+                className={`flex flex-col justify-center items-center min-h-screen bg-gradient-to-b from-yellow-300 via-white to-yellow-500 transition-opacity duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}
             >
-                <h1 className='text-5xl sm:text-7xl text-brown-800 tracking-wide mb-4'>
-                    ACE Chilifest 2024 Presents
-                </h1>
                 <h1 className="text-5xl sm:text-7xl font-gothic text-brown-800 tracking-wide">
-                    ACEtoberfest
+                    ACEtoberfest - 2024
                 </h1>
 
                 <div className='relative w-full h-[600px] mt-6 overflow-hidden'>
