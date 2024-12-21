@@ -5,6 +5,7 @@ import TicketItems from './TicketItems';
 import ACEtoberfest from './ACEtoberfest';
 import Bikini from './Bikini';
 import Tickets from './Tickets';
+import Vegas from './Vegas';
 
 const Home = () => {
 
@@ -72,6 +73,10 @@ const Home = () => {
 
         <section id="bikini" className="section h-screen">
           <Bikini />
+        </section>
+
+        <section id="vegas" className="section min-h-[150vh]">
+          <Vegas />
         </section>
 
         <section id="tickets" className="section h-screen">
