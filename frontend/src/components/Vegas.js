@@ -12,7 +12,7 @@ function Vegas() {
             const sectionTop = section.offsetTop;
             const scrollY = window.scrollY + window.innerHeight / 2;
 
-            console.log('scrollY:', scrollY, 'sectionTop:', sectionTop, 'sectionHeight:', sectionHeight);
+            // console.log('scrollY:', scrollY, 'sectionTop:', sectionTop, 'sectionHeight:', sectionHeight);
 
             const distanceFromCenter = Math.abs(scrollY - (sectionTop + sectionHeight / 2));
             const maxDistance = sectionHeight / 2;
@@ -21,7 +21,7 @@ function Vegas() {
             setOpacity(newOpacity);
         };
 
-        console.log("Adding scroll event listener");
+        // console.log("Adding scroll event listener");
 
         window.addEventListener("scroll", handleScroll);
 
@@ -35,7 +35,7 @@ function Vegas() {
             id="vegas-section"
             className="bg-fixed bg-cover bg-center bg-no-repeat"
             style={{
-                backgroundImage: 'url("vegas_1.JPG")',
+                backgroundImage: 'url("vegas.jpg")',
                 height: '150vh',
 
             }}>
