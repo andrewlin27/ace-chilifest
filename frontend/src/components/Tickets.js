@@ -14,7 +14,7 @@ const Tickets = () => {
           be delivered to your 
           point of contact ACE member. If you do not have one, we will contact you for delivery.
         </p>
-        <div className="flex justify-center space-x-8">
+        <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-8">
           <div className='border-2 border-black rounded-md'>
             <stripe-buy-button
               buy-button-id="buy_btn_1QXduTK7YftLNAStFJocGhwp"
@@ -37,7 +37,7 @@ const Tickets = () => {
           These tickets grant you access to the ACE build, along with food and drinks.
           Please advise these ticket <b>DO NOT</b> inlcude admission to Chilifest.
         </p>
-        <div className="flex justify-center space-x-8">
+        <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-8">
           <div className='border-2 border-black rounded-md'>
             <stripe-buy-button
               buy-button-id="buy_btn_1QXZJqK7YftLNASt4eSZkqM8"
