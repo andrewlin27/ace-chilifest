@@ -7,12 +7,11 @@ const Tickets = () => {
 
       {/* Tier One Tickets */}
       <div className="mb-12">
-        <h3 className="text-2xl font-semibold mb-4">Tier One (250)</h3>
+        <h3 className="text-2xl font-semibold mb-4">Tier One (250 left)</h3>
         <p className="mb-6">
-          These tickets come with admission into Chilifest, in addition to a <u>t-shirt, food, and drinks</u> at the ACE build. 
-          The first 250 tier one tickets sold will also include ski goggles, fanny pack, and a koozie! Your t-shirt will 
-          be delivered to your 
-          point of contact ACE member. If you do not have one, we will contact you for delivery.
+          These tickets come with admission into Chilifest, in addition to <u>food, drinks, and a t-shirt</u> at the ACE build. 
+          Tier one tickets will also include ski goggles, fanny pack, and a koozie! Your package will 
+          be delivered to your point of contact ACE member. If you do not have one, we will contact you for delivery.
         </p>
         <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-8">
           <div className='border-2 border-black rounded-md'>
@@ -34,8 +33,9 @@ const Tickets = () => {
       <div>
         <h3 className="text-2xl font-semibold mb-4">Build Only</h3>
         <p className="mb-6">
-          These tickets grant you access to the ACE build, along with food and drinks.
-          Please advise these ticket <b>DO NOT</b> inlcude admission to Chilifest.
+          Please advise these tickets <b>DO NOT</b> inlcude admission to Chilifest. Rather, these grant you 
+          access to the ACE build, along with our food and drinks. Your wrist bands will 
+          be delivered to your point of contact ACE member. If you do not have one, we will contact you for delivery.
         </p>
         <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-8">
           <div className='border-2 border-black rounded-md'>
