@@ -12,8 +12,6 @@ function Vegas() {
             const sectionTop = section.offsetTop;
             const scrollY = window.scrollY + window.innerHeight / 2;
 
-            // console.log('scrollY:', scrollY, 'sectionTop:', sectionTop, 'sectionHeight:', sectionHeight);
-
             const distanceFromCenter = Math.abs(scrollY - (sectionTop + sectionHeight / 2));
             const maxDistance = sectionHeight / 2;
             const newOpacity = Math.max(1 - distanceFromCenter / maxDistance, 0);
@@ -21,7 +19,6 @@ function Vegas() {
             setOpacity(newOpacity);
         };
 
-        // console.log("Adding scroll event listener");
 
         window.addEventListener("scroll", handleScroll);
 
