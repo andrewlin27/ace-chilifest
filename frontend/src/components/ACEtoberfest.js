@@ -12,7 +12,7 @@ function ACEtoberfest() {
 
     const [isVisible, setIsVisible] = useState(false);
     const sectionRef = useRef(null);
-    const [randomImage, setRandomImage] = useState(null);
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
     const [position, setPosition] = useState({ top: 0, left: 0 });
     const [isFading, setIsFading] = useState(false);
     const imageContainerRef = useRef(null);
@@ -65,9 +65,9 @@ function ACEtoberfest() {
     const showFirstImage = () => {
         const containerWidth = imageContainerRef.current?.getBoundingClientRect().width || window.innerWidth;
         const containerHeight = imageContainerRef.current?.getBoundingClientRect().height || window.innerHeight;
-        const randomIndex = Math.floor(Math.random() * images.length);
+        // const randomIndex = Math.floor(Math.random() * images.length);
         const img = new Image();
-        img.src = images[randomIndex];
+        img.src = images[currentImageIndex];
 
         img.onload = () => {
             const imgWidth = img.naturalWidth;
@@ -85,7 +85,7 @@ function ACEtoberfest() {
             const randomTop = Math.floor(Math.random() * safeMaxTop) + padding / 2 + innerMargin;
             const randomLeft = Math.floor(Math.random() * safeMaxLeft) + (padding + innerMargin);
 
-            setRandomImage(images[randomIndex]);
+            setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
             setPosition({ top: randomTop, left: randomLeft });
 
             setTimeout(() => setIsFading(true), 0);
@@ -94,7 +94,7 @@ function ACEtoberfest() {
                 setIsFading(false);
             }, 2000);
 
-            setTimeout(() => setRandomImage(null), 2500);
+            setTimeout(() => setCurrentImageIndex(null), 2500);
         };
     };
 
@@ -106,12 +106,16 @@ function ACEtoberfest() {
     };
 
     const startFadingImages = () => {
+        let nextIndex = currentImageIndex;
         imageCycleRef.current = setInterval(() => {
+            nextIndex = (nextIndex + 1) % images.length;
+            setCurrentImageIndex(nextIndex);
+
             const containerWidth = imageContainerRef.current?.getBoundingClientRect().width || window.innerWidth;
             const containerHeight = imageContainerRef.current?.getBoundingClientRect().height || window.innerHeight;
-            const randomIndex = Math.floor(Math.random() * images.length);
+
             const img = new Image();
-            img.src = images[randomIndex];
+            img.src = images[nextIndex];
 
             img.onload = () => {
                 const imgWidth = img.naturalWidth;
@@ -129,17 +133,15 @@ function ACEtoberfest() {
                 const randomTop = Math.floor(Math.random() * safeMaxTop) + padding / 2 + innerMargin;
                 const randomLeft = Math.floor(Math.random() * safeMaxLeft) + (padding + innerMargin);
 
-                setRandomImage(images[randomIndex]);
                 setPosition({ top: randomTop, left: randomLeft });
 
                 setTimeout(() => {
                     setIsFading(true);
                     setTimeout(() => setIsFading(false), 2000);
                 }, 50);
-                setTimeout(() => setRandomImage(null), 2500); 
             };
-        }, 3000);
-    }
+        }, 3000); 
+    };
 
 
     return (
@@ -153,9 +155,9 @@ function ACEtoberfest() {
                 </h1>
 
                 <div className='relative w-full h-[600px] mt-6 overflow-hidden'>
-                    {randomImage && (
+                    {currentImageIndex !== null && (
                         <img
-                            src={randomImage}
+                            src={images[currentImageIndex]}
                             alt="ACEtoberfest"
                             className={`absolute transition-opacity duration-1000 ease-in-out ${isFading ? 'opacity-100' : 'opacity-0'
                                 }`}
