@@ -6,6 +6,7 @@ import ACEtoberfest from './ACEtoberfest';
 import Bikini from './Bikini';
 import Tickets from './Tickets';
 import Vegas from './Vegas';
+import Footer from './Footer';
 
 const Home = () => {
 
@@ -79,10 +80,13 @@ const Home = () => {
           <Vegas />
         </section>
 
-        <section id="tickets" className="section h-screen">
+        <section id="tickets" className="section min-h-screen">
           <Tickets />
         </section>
       </main>
+
+      <Footer />
+
     </div>
   );
 }

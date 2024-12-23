@@ -46,7 +46,7 @@ function Bikini() {
     return (
         <div
             ref={sectionRef}
-            className={`relative h-screen flex justify-center items-center transition-opacity duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'
+            className={`bg-gray-100 relative h-screen flex justify-center items-center transition-opacity duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'
                 }`}
         >
             <div className='flex flex-row justify-center items-center gap-8'>
