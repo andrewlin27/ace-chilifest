@@ -20,11 +20,23 @@ function ACEtoberfest() {
     const [imageWidth, setImageWidth] = useState(0);
     const imageCycleRef = useRef(null);
 
+
     useEffect(() => {
+        // Preload images
+        const preloadImages = () => {
+            images.forEach((src) => {
+                const img = new Image();
+                img.src = src;
+            });
+        };
+
+        preloadImages();
+
         const observer = new IntersectionObserver(
             ([entry]) => {
                 if (entry.isIntersecting) {
                     setIsVisible(true);
+                    showFirstImage(); // Show the first image immediately
                     startFadingImages();
                 } else {
                     setIsVisible(false);
@@ -34,7 +46,7 @@ function ACEtoberfest() {
             {
                 root: null,
                 rootMargin: '0px',
-                threshold: 0.5
+                threshold: 0.5,
             }
         );
 
@@ -47,8 +59,45 @@ function ACEtoberfest() {
                 observer.unobserve(sectionRef.current);
             }
             clearInterval(imageCycleRef.current);
-        }
+        };
     }, []);
+
+    const showFirstImage = () => {
+        const containerWidth = imageContainerRef.current?.getBoundingClientRect().width || window.innerWidth;
+        const containerHeight = imageContainerRef.current?.getBoundingClientRect().height || window.innerHeight;
+        const randomIndex = Math.floor(Math.random() * images.length);
+        const img = new Image();
+        img.src = images[randomIndex];
+
+        img.onload = () => {
+            const imgWidth = img.naturalWidth;
+            const imgHeight = img.naturalHeight;
+
+            const padding = 200;
+            const innerMargin = 100;
+
+            const maxLeft = containerWidth - imgWidth - padding - innerMargin * 2;
+            const maxTop = containerHeight - imgHeight - padding - innerMargin * 2;
+
+            const safeMaxLeft = Math.max(0, maxLeft);
+            const safeMaxTop = Math.max(0, maxTop);
+
+            const randomTop = Math.floor(Math.random() * safeMaxTop) + padding / 2 + innerMargin;
+            const randomLeft = Math.floor(Math.random() * safeMaxLeft) + (padding + innerMargin);
+
+            setRandomImage(images[randomIndex]);
+            setPosition({ top: randomTop, left: randomLeft });
+
+            setTimeout(() => setIsFading(true), 0);
+
+            setTimeout(() => {
+                setIsFading(false);
+            }, 2000);
+
+            setTimeout(() => setRandomImage(null), 2500);
+        };
+    };
+
 
     const handleImage = () => {
         if (imageRef.current) {
@@ -83,13 +132,11 @@ function ACEtoberfest() {
                 setRandomImage(images[randomIndex]);
                 setPosition({ top: randomTop, left: randomLeft });
 
-                setTimeout(() => setIsFading(true), 0);
-
                 setTimeout(() => {
-                    setIsFading(false);
-                }, 2000);
-
-                setTimeout(() => setRandomImage(null), 2500);
+                    setIsFading(true);
+                    setTimeout(() => setIsFading(false), 2000);
+                }, 50);
+                setTimeout(() => setRandomImage(null), 2500); 
             };
         }, 3000);
     }
