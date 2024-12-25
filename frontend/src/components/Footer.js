@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="bg-gray-900 text-white py-12">
       <div className="text-center">
         <p className="text-sm">
-          Created by ACE members <span className="font-bold">Eric McGonagle</span> & <span className='font-bold'>Andrew Lin</span>
+          Created by ACE members <span className='italic'>Eric McGonagle</span> & <span className='italic'>Andrew Lin</span>
         </p>
         <div className="mt-4 mb-4 flex justify-center space-x-4"> 
           <a

@@ -5,7 +5,7 @@ const Tickets = () => {
     <div className="py-12 bg-gray-100 mx-auto px-20 sm:px-64">
       <h2 className="text-4xl font-bold text-center mb-8">Tickets</h2>
 
-      {/* Tier One Tickets */}
+      {/* Tier One Tickets 130/195*/}
       <div className="mb-12">
         <h3 className="text-2xl font-semibold mb-4">Tier One - Ends Jan 31, 2025</h3>
         <ul className='list-disc list-inside mb-3'>
@@ -41,7 +41,49 @@ const Tickets = () => {
         </div>
       </div>
       
-      {/* Tier 2/3 here - increase $10 each tier 140/150 205/215*/}
+      {/* Tier Two 140/205 */}
+      <div className="mb-12">
+        <h3 className="text-2xl font-semibold mb-4">Tier Two - Ends Feb 28, 2025</h3>
+        <p className="mb-6">
+          Identitical to Tier One
+        </p>
+        <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-8">
+          <div className='border-2 border-black rounded-md'>
+            <stripe-buy-button
+              buy-button-id="buy_btn_1QZje8K7YftLNAStOSrJl5S9"
+              publishable-key="pk_live_51QXBW9K7YftLNASt6Lhrq3FtAOmPkKlyC9QjRbtHGHXiJSCOyVqmy5jyjCbe6ZkBxuRHlstTUYilVOc8DWms3Td900Eq9lzcXN"
+            ></stripe-buy-button>
+          </div>
+          <div className='border-2 border-black rounded-md'>
+            <stripe-buy-button
+              buy-button-id="buy_btn_1QZjVlK7YftLNAStZFlWdwHk"
+              publishable-key="pk_live_51QXBW9K7YftLNASt6Lhrq3FtAOmPkKlyC9QjRbtHGHXiJSCOyVqmy5jyjCbe6ZkBxuRHlstTUYilVOc8DWms3Td900Eq9lzcXN"
+            ></stripe-buy-button>
+          </div>
+        </div>
+      </div>
+
+      {/* Tier Three 150/215 */}
+      <div className="mb-12">
+        <h3 className="text-2xl font-semibold mb-4">Tier Three</h3>
+        <p className="mb-6">
+          Identitical to Tier One/Two
+        </p>
+        <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-8">
+          <div className='border-2 border-black rounded-md'>
+            <stripe-buy-button
+              buy-button-id="buy_btn_1QZjqbK7YftLNAStaKhZ7mes"
+              publishable-key="pk_live_51QXBW9K7YftLNASt6Lhrq3FtAOmPkKlyC9QjRbtHGHXiJSCOyVqmy5jyjCbe6ZkBxuRHlstTUYilVOc8DWms3Td900Eq9lzcXN"
+            ></stripe-buy-button>
+          </div>
+          <div className='border-2 border-black rounded-md'>
+            <stripe-buy-button
+              buy-button-id="buy_btn_1QZjzAK7YftLNAStVV3sephz"
+              publishable-key="pk_live_51QXBW9K7YftLNASt6Lhrq3FtAOmPkKlyC9QjRbtHGHXiJSCOyVqmy5jyjCbe6ZkBxuRHlstTUYilVOc8DWms3Td900Eq9lzcXN"
+            ></stripe-buy-button>
+          </div>
+        </div>
+      </div>
 
       {/* Build Only Tickets */}
       <div>
