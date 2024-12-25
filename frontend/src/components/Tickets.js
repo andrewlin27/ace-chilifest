@@ -7,12 +7,13 @@ const Tickets = () => {
 
       {/* Tier One Tickets */}
       <div className="mb-12">
-        <h3 className="text-2xl font-semibold mb-4">Tier One (250 left)</h3>
+        <h3 className="text-2xl font-semibold mb-4">Tier One - Ends Jan 31, 2025</h3>
         <ul className='list-disc list-inside mb-3'>
           <li>Food and drinks at the ACE build</li>
           <li>Admission to Chilifest</li>
+          <li>T-Shirt</li>
           <li>
-            80's in ACEpen gear
+            80's in ACEpen gear (first 250 tickets)
             <ul className="list-decimal list-inside ml-6">
               <li>Ski goggles</li>
               <li>Fanny pack</li>
@@ -39,6 +40,8 @@ const Tickets = () => {
           </div>
         </div>
       </div>
+      
+      {/* Tier 2/3 here - increase $10 each tier 140/150 205/215*/}
 
       {/* Build Only Tickets */}
       <div>

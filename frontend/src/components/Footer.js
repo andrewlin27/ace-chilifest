@@ -33,10 +33,13 @@ const Footer = () => {
           </a>
         </div>
         <p className="text-sm">
-          For further questions, please contact us at <span className="font-bold">XXX</span>
+          For any inquiries regarding potential sponsorships or general <br/>questions, please 
+          contact us at <a className='underline font-bold' href='mailto:specialeventsace@gmail.com?subject=ACE%20Chilifest'>
+          specialeventsace@gmail.com</a>
         </p>
+        <br/>
         <p className="text-sm">
-          Last updated <span className='underline'>December 22nd, 2024</span>
+          Last updated <span className='underline'>December 24nd, 2024</span>
         </p>
       </div>
     </footer>
