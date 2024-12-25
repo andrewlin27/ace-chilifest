@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="bg-gray-900 text-white py-12">
       <div className="text-center">
         <p className="text-sm">
-          Created by ACE members <span className="font-bold">Eric McGonagle</span> & <span className='font-bold'>Andrew Lin</span>
+          Created by ACE members <span className='italic'>Eric McGonagle</span> & <span className='italic'>Andrew Lin</span>
         </p>
         <div className="mt-4 mb-4 flex justify-center space-x-4"> 
           <a
@@ -33,10 +33,13 @@ const Footer = () => {
           </a>
         </div>
         <p className="text-sm">
-          For further questions, please contact us at <span className="font-bold">XXX</span>
+          For any inquiries regarding potential sponsorships or general <br/>questions, please 
+          contact us at <a className='underline font-bold' href='mailto:specialeventsace@gmail.com?subject=ACE%20Chilifest'>
+          specialeventsace@gmail.com</a>
         </p>
+        <br/>
         <p className="text-sm">
-          Last updated <span className='underline'>December 22nd, 2024</span>
+          Last updated <span className='underline'>December 24nd, 2024</span>
         </p>
       </div>
     </footer>
