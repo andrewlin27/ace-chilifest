@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white py-12">
+    <footer className="bg-gray-900 text-white py-12 px-8">
       <div className="text-center">
         <p className="text-sm">
           Created by ACE members <span className='italic'>Eric McGonagle</span> & <span className='italic'>Andrew Lin</span>
@@ -33,7 +33,7 @@ const Footer = () => {
           </a>
         </div>
         <p className="text-sm">
-          For any inquiries regarding potential sponsorships or general <br/>questions, please 
+          For any inquiries regarding potential sponsorships or general questions, please 
           contact us at <a className='underline font-bold' href='mailto:specialeventsace@gmail.com?subject=ACE%20Chilifest'>
           specialeventsace@gmail.com</a>
         </p>
