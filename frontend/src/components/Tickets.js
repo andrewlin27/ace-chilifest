@@ -64,7 +64,7 @@ const Tickets = () => {
       </div>
 
       {/* Tier Three 150/215 */}
-      <div className="mb-12">
+      {/* <div className="mb-12">
         <h3 className="text-2xl font-semibold mb-4">Tier Three</h3>
         <p className="mb-6">
           Identitical to Tier One/Two
@@ -83,7 +83,23 @@ const Tickets = () => {
             ></stripe-buy-button>
           </div>
         </div>
-      </div>
+      </div> */}
+
+      {/* Member/alumni 180 */}
+      {/* <div className="mb-12">
+        <h3 className="text-2xl font-semibold mb-4">Active Members & Alumni</h3>
+        <p className="mb-6">
+          Identitical to Tier One
+        </p>
+        <div className="flex justify-center">
+          <div className='border-2 border-black rounded-md'>
+            <stripe-buy-button
+              buy-button-id="buy_btn_1QawPEK7YftLNAStUQuvJqva"
+              publishable-key="pk_live_51QXBW9K7YftLNASt6Lhrq3FtAOmPkKlyC9QjRbtHGHXiJSCOyVqmy5jyjCbe6ZkBxuRHlstTUYilVOc8DWms3Td900Eq9lzcXN"
+            ></stripe-buy-button>
+          </div>
+        </div>
+      </div> */}
 
       {/* Build Only Tickets */}
       <div>
