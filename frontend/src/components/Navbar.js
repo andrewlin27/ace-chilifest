@@ -15,7 +15,7 @@ const Navbar = () => {
               Home
             </ScrollLink>
           </li>
-          <li className='text-white font-bold text-lg py-2 px-4 transition-all duration-300'>
+          {/* <li className='text-white font-bold text-lg py-2 px-4 transition-all duration-300'>
             <ScrollLink
               to="ticket-info"
               smooth={true}
@@ -23,7 +23,7 @@ const Navbar = () => {
               className="hover:text-blue-500 transition-colors ease-in-out duration-300 cursor-pointer">
               Ticket Info
             </ScrollLink>
-          </li>
+          </li> */}
           <li className='text-white font-bold text-lg py-2 px-4 transition-all duration-300'>
             <ScrollLink
               to="tickets"

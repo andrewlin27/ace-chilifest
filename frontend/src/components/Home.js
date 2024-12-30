@@ -55,18 +55,18 @@ const Home = () => {
             opacity: blendOpacity,
             transition: 'opacity 0.2s ease-out',
           }}>
-          <h1 className="relative font-extrabold text-8xl bg-clip-text animate-neon-flash">
+          <h1 className="text-center relative font-extrabold text-8xl bg-clip-text animate-neon-flash">
             80's in ACEpen
           </h1>
         </section>
 
-        <section id="ticket-info" className="section h-screen">
+        {/* <section id="ticket-info" className="section h-screen">
           <TicketInfo />
-        </section>
+        </section> */}
 
-        <section id="ticket-items" className="section h-creen">
+        {/* <section id="ticket-items" className="section h-creen">
           <TicketItems />
-        </section>
+        </section> */}
 
         <section id="ace-toberfest" className="section h-screen">
           <ACEtoberfest />
