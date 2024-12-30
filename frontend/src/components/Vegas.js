@@ -30,7 +30,7 @@ function Vegas() {
     return (
         <div
             id="vegas-section"
-            className="relative w-full h-[150vh] overflow-hidden">
+            className="relative w-full h-[50vh] sm:h-[150vh] overflow-hidden">
                 <img
                     src="vegas.jpg"
                     alt="Viva Las Vegas"

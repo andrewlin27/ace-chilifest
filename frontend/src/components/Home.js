@@ -76,7 +76,7 @@ const Home = () => {
           <Bikini />
         </section>
 
-        <section id="vegas" className="section min-h-[150vh]">
+        <section id="vegas" className="section min-h-[50vh] sm:min-h-[150vh]">
           <Vegas />
         </section>
 
