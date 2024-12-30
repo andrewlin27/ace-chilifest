@@ -68,11 +68,11 @@ const Home = () => {
           <TicketItems />
         </section> */}
 
-        <section id="ace-toberfest" className="section h-screen">
+        <section id="ace-toberfest" className="section min-h-screen">
           <ACEtoberfest />
         </section>
 
-        <section id="bikini" className="section h-screen">
+        <section id="bikini" className="section min-h-screen">
           <Bikini />
         </section>
 

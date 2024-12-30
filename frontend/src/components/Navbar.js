@@ -30,7 +30,7 @@ const Navbar = () => {
               smooth={true}
               duration={500}
               className="hover:text-blue-500 transition-colors ease-in-out duration-300 cursor-pointer">
-              Buy Tickets
+              Tickets
             </ScrollLink>
           </li>
         </ul>

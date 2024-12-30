@@ -6,6 +6,7 @@ const images = [
     'acetoberfest_4.JPG',
     'acetoberfest_7.JPG',
     'acetoberfest_8.JPEG',
+    'acetoberfest_15.jpg',
 ]
 
 function ACEtoberfest() {
@@ -148,10 +149,10 @@ function ACEtoberfest() {
         <div>
             <div
                 ref={sectionRef}
-                className={`flex flex-col justify-center items-center min-h-screen bg-gradient-to-b from-yellow-300 via-white to-yellow-500 transition-opacity duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}
+                className={`py-12 flex flex-col justify-center items-center min-h-screen bg-gradient-to-b from-yellow-300 via-white to-yellow-500 transition-opacity duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}
             >
-                <h1 className="text-5xl sm:text-7xl font-gothic text-brown-800 tracking-wide">
-                    ACEtoberfest - 2024
+                <h1 className="text-center text-5xl sm:text-7xl font-gothic text-brown-800 tracking-wide">
+                    ACEtoberfest<br/>2024
                 </h1>
 
                 <div className='relative w-full h-[600px] mt-6 overflow-hidden'>

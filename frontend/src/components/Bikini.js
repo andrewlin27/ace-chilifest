@@ -4,7 +4,8 @@ function Bikini() {
 
     const images = [
         'bikini_1.jpeg',
-
+        'bikini_4.jpg',
+        'bikini_5.JPG',
     ]
     const [isVisible, setIsVisible] = useState(false);
     const sectionRef = useRef(null);
@@ -49,13 +50,13 @@ function Bikini() {
             className={`bg-gray-100 relative h-screen flex justify-center items-center transition-opacity duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'
                 }`}
         >
-            <div className='flex flex-row justify-center items-center gap-8'>
+            <div className='flex flex-col sm:flex-row justify-center items-center gap-8'>
                 <div className="text-5xl sm:text-7xl font-extrabold uppercase tracking-wider text-spongeYellow text-center">
                     <span className="drop-shadow-[4px_4px_0_rgb(0,0,255)] skew-y-3 skew-x-3">Bikini</span> <br />
                     <span className="drop-shadow-[4px_4px_0_rgb(255,0,0)] skew-y-3 skew-x-3">Bottoms Up</span> <br />
                     <span className="drop-shadow-[4px_4px_0_rgb(255,255,0)] skew-y-3 skew-x-3">2023</span> <br />
                 </div>
-                <div className="w-1/2 flex justify-center">
+                <div className="sm:w-1/2 flex justify-center">
                     <img
                         src={images[currentImageIndex]}
                         className={`w-3/5 rounded-lg shadow-lg transition-opacity duration-[1500ms] 
