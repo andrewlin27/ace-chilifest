@@ -30,22 +30,22 @@ function Vegas() {
     return (
         <div
             id="vegas-section"
-            className="bg-fixed bg-contain sm:bg-cover bg-center bg-no-repeat"
-            style={{
-                backgroundImage: 'url("vegas.jpg")',
-                height: '150vh',
-
-            }}>
-            <h1
-                className="text-white text-7xl font-extrabold text-center tracking-widest drop-shadow-[0_5px_5px_rgba(255,0,0,0.8)] fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
-                style={{
-                    opacity: opacity,
-                    transition: "opacity 0.1s ease-out",
-                }}
-            >
-                VIVA LAS VEGAS
-                <div className="text-4xl font-semibold mt-4">2022</div>
-            </h1>
+            className="relative w-full h-[150vh] overflow-hidden">
+                <img
+                    src="vegas.jpg"
+                    alt="Viva Las Vegas"
+                    className="absolute top-0 left-0 w-full h-full object-cover"
+                />
+                <h1
+                    className="text-white text-7xl font-extrabold text-center tracking-widest drop-shadow-[0_5px_5px_rgba(255,0,0,0.8)] fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                    style={{
+                        opacity: opacity,
+                        transition: "opacity 0.1s ease-out",
+                    }}
+                >
+                    VIVA LAS VEGAS
+                    <div className="text-4xl font-semibold mt-4">2022</div>
+                </h1>
         </div>
     );
 }
