@@ -48,7 +48,7 @@ const Home = () => {
       <main>
         <section
           id="home"
-          className="h-screen flex flex-col justify-center items-center bg-[url('../public/IMG_1267.PNG')] bg-cover bg-center fade-bg"
+          className="h-screen flex flex-col justify-center items-center bg-[url('/public/background.png')] bg-cover bg-center fade-bg"
           style={{
             backgroundSize: 'cover',
             backgroundPosition: 'center bottom',

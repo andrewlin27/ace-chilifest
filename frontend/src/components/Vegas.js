@@ -30,7 +30,7 @@ function Vegas() {
     return (
         <div
             id="vegas-section"
-            className="bg-fixed bg-cover bg-center bg-no-repeat"
+            className="bg-fixed bg-contain sm:bg-cover bg-center bg-no-repeat"
             style={{
                 backgroundImage: 'url("vegas.jpg")',
                 height: '150vh',

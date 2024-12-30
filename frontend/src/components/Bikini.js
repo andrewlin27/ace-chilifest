@@ -5,7 +5,7 @@ function Bikini() {
     const images = [
         'bikini_1.jpeg',
         'bikini_4.jpg',
-        'bikini_5.JPG',
+        // 'bikini_5.JPG',
     ]
     const [isVisible, setIsVisible] = useState(false);
     const sectionRef = useRef(null);
@@ -38,7 +38,7 @@ function Bikini() {
             setTimeout(() => {
                 setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
                 setFade(true);
-            }, 1500);
+            }, 1200);
         }, 4000);
 
         return () => clearInterval(interval);
