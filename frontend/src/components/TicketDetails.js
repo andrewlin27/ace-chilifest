@@ -2,7 +2,7 @@ import React from 'react'
 
 const TicketDetails = () => {
   return (
-    <div className="py-12 bg-gray-100 mx-auto px-12 sm:px-72">
+    <div className="py-12 bg-gray-100 mx-auto px-12 sm:px-96">
       <h2 className="text-4xl font-bold text-center mb-8">Details</h2>
 
       {/* Tier One Tickets 130/195*/}
