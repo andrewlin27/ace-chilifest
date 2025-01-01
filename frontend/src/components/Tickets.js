@@ -2,7 +2,7 @@ import React from 'react'
 
 const Tickets = () => {
   return (
-    <div className="py-12 bg-gray-100 mx-auto px-12 sm:px-64">
+    <div className="py-12 bg-gray-100 mx-auto px-12 sm:px-72">
       <h2 className="text-4xl font-bold text-center mb-8">Tickets</h2>
 
       {/* Tier One Tickets 130/195*/}
@@ -73,6 +73,15 @@ const Tickets = () => {
 
       {/* Build Only Tickets */}
       <div>
+        <h3 className="text-2xl font-semibold">Build Only</h3>
+        <ul className='list-disc list-inside mb-1'>
+          <li>Food and drinks at the ACE build</li>
+          <li><span className='font-bold'>DOES NOT</span> include admission to Chilifest</li>
+        </ul>
+        <p className="mb-6">
+          Your wrist bands will be delivered to your point of contact ACE member.
+          If you do not have one, we will contact you for delivery.
+        </p>
         <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-8">
           <div className='border-2 border-black rounded-md'>
             <stripe-buy-button
