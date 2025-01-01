@@ -7,6 +7,8 @@ import Bikini from './Bikini';
 import Tickets from './Tickets';
 import Vegas from './Vegas';
 import Footer from './Footer';
+import Sponsors from './Sponsors';
+import Shirt from './Shirt';
 
 const Home = () => {
 
@@ -68,6 +70,10 @@ const Home = () => {
           <TicketItems />
         </section> */}
 
+        <section id="shirts" className='bg-white py-12'>
+          <Shirt />
+        </section>
+
         <section id="ace-toberfest" className="section min-h-screen">
           <ACEtoberfest />
         </section>
@@ -82,6 +88,10 @@ const Home = () => {
 
         <section id="tickets" className="section min-h-screen">
           <Tickets />
+        </section>
+
+        <section id="sponsors" className="bg-gray-100 py-12">
+          <Sponsors />
         </section>
       </main>
 
