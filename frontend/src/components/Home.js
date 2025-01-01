@@ -9,6 +9,7 @@ import Vegas from './Vegas';
 import Footer from './Footer';
 import Sponsors from './Sponsors';
 import Shirts from './Shirts';
+import TicketDetails from './TicketDetails';
 
 const Home = () => {
 
@@ -70,8 +71,20 @@ const Home = () => {
           <TicketItems />
         </section> */}
 
+        <section id="ticketdetails">
+          <TicketDetails />
+        </section>
+
         <section id="shirts" className='bg-white py-12'>
           <Shirts />
+        </section>
+
+        <section id="tickets" className="section min-h-screen">
+          <Tickets />
+        </section>
+
+        <section id="sponsors" className="py-12">
+          <Sponsors />
         </section>
 
         <section id="ace-toberfest" className="section min-h-screen">
@@ -84,14 +97,6 @@ const Home = () => {
 
         <section id="vegas" className="section min-h-[50vh] sm:min-h-[150vh]">
           <Vegas />
-        </section>
-
-        <section id="tickets" className="section min-h-screen">
-          <Tickets />
-        </section>
-
-        <section id="sponsors" className="bg-gray-100 py-12">
-          <Sponsors />
         </section>
       </main>
 
