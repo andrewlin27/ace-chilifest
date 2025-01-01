@@ -2,8 +2,8 @@ import React from 'react'
 
 const Shirts = () => {
     const shirts = [
-        { id: 1, name: "Girls T-Shirt", image: 'girlshirt.png' },
-        { id: 2, name: "Guys T-Shirt", image: 'guyshirt.png' },
+        { id: 1, name: "Girls T-Shirt", image1: 'girlshirt1.jpeg', image2: 'girlshirt2.jpeg' },
+        { id: 2, name: "Guys T-Shirt", image1: 'guyshirt1.jpeg', image2: 'guyshirt2.jpeg' },
     ];
 
   return (
@@ -13,7 +13,12 @@ const Shirts = () => {
             {shirts.map((shirt) => (
             <div key={shirt.id} className="w-72 md:w-96 flex flex-col items-center">
                 <img
-                    src={shirt.image}
+                    src={shirt.image1}
+                    alt={shirt.name}
+                    className="w-full h-auto object-cover rounded-md shadow-lg mb-4"
+                />
+                <img 
+                    src={shirt.image2}
                     alt={shirt.name}
                     className="w-full h-auto object-cover rounded-md shadow-lg"
                 />
