@@ -13,7 +13,7 @@ function Vegas() {
             const scrollY = window.scrollY + window.innerHeight / 2;
 
             const distanceFromCenter = Math.abs(scrollY - (sectionTop + sectionHeight / 2));
-            const maxDistance = sectionHeight / 2;
+            const maxDistance = sectionHeight / 3;
             const newOpacity = Math.max(1 - distanceFromCenter / maxDistance, 0);
 
             setOpacity(newOpacity);
