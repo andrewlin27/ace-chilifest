@@ -39,7 +39,7 @@ const Footer = () => {
         </p>
         <br/>
         <p className="text-sm">
-          Last updated <span className='underline'>December 30th, 2024</span>
+          Last updated <span className='underline'>December 31st, 2024</span>
         </p>
       </div>
     </footer>
