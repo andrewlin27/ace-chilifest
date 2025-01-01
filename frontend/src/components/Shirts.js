@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Shirt = () => {
+const Shirts = () => {
     const shirts = [
         { id: 1, name: "Girls T-Shirt", image: 'girlshirt.png' },
         { id: 2, name: "Guys T-Shirt", image: 'guyshirt.png' },
@@ -25,4 +25,4 @@ const Shirt = () => {
   )
 }
 
-export default Shirt
+export default Shirts

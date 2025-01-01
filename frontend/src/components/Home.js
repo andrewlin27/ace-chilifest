@@ -8,7 +8,7 @@ import Tickets from './Tickets';
 import Vegas from './Vegas';
 import Footer from './Footer';
 import Sponsors from './Sponsors';
-import Shirt from './Shirt';
+import Shirts from './Shirts';
 
 const Home = () => {
 
@@ -71,7 +71,7 @@ const Home = () => {
         </section> */}
 
         <section id="shirts" className='bg-white py-12'>
-          <Shirt />
+          <Shirts />
         </section>
 
         <section id="ace-toberfest" className="section min-h-screen">
