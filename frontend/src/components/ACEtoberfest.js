@@ -16,14 +16,14 @@ function ACEtoberfest() {
 
     return (
         <div>
-            <div className="py-12 flex flex-col justify-center items-center h-[50vh] sm:h-[150vh] bg-gradient-to-b from-yellow-300 via-white to-yellow-500 transition-opacity duration-1000">
+            <div className="py-12 flex flex-col justify-center items-center h-screen sm:h-[150vh] bg-gradient-to-b from-yellow-300 via-white to-yellow-500 transition-opacity duration-1000">
                 <h1 className="text-center text-5xl sm:text-7xl font-gothic text-brown-800 tracking-wide">
                     ACEtoberfest<br />2024
                 </h1>
 
-                <div id="default-carousel" className="relative w-full" data-carousel="slide">
+                <div id="default-carousel" className="relative w-full mt-16" data-carousel="slide">
                     {/* Carousel wrapper */}
-                    <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
+                    <div className="relative z-30 h-56 flex justify-center items-center overflow-hidden rounded-lg md:h-96">
                         {images.map((image, index) => (
                             <div
                                 key={index}
@@ -32,7 +32,7 @@ function ACEtoberfest() {
                             >
                                 <img
                                     src={image}
-                                    className="absolute block w-3/5 h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-lg"
+                                    className="absolute z-30 block w-full sm:w-3/5 h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-lg"
                                     alt={`carousel-${index}`}
                                 />
                             </div>

@@ -87,7 +87,7 @@ const Home = () => {
           <Sponsors />
         </section>
 
-        <section id="ace-toberfest" className="section min-h-[50vh] sm:min-h-[150vh">
+        <section id="ace-toberfest" className="section min-h-screen">
           <ACEtoberfest />
         </section>
 
