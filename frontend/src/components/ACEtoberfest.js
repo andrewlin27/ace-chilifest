@@ -152,7 +152,7 @@ function ACEtoberfest() {
                 className={`py-12 flex flex-col justify-center items-center min-h-screen bg-gradient-to-b from-yellow-300 via-white to-yellow-500 transition-opacity duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}
             >
                 <h1 className="text-center text-5xl sm:text-7xl font-gothic text-brown-800 tracking-wide">
-                    ACEtoberfest<br/>2024
+                    acetoberfest<br/>2024
                 </h1>
 
                 <div className='relative w-full h-[600px] mt-6 overflow-hidden'>
