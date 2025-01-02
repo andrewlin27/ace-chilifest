@@ -16,7 +16,7 @@ function ACEtoberfest() {
 
     return (
         <div>
-            <div className="py-12 flex flex-col justify-center items-center min-h-screen bg-gradient-to-b from-yellow-300 via-white to-yellow-500 transition-opacity duration-1000">
+            <div className="py-12 flex flex-col justify-center items-center h-[50vh] sm:h-[150vh] bg-gradient-to-b from-yellow-300 via-white to-yellow-500 transition-opacity duration-1000">
                 <h1 className="text-center text-5xl sm:text-7xl font-gothic text-brown-800 tracking-wide">
                     ACEtoberfest<br />2024
                 </h1>
@@ -32,7 +32,7 @@ function ACEtoberfest() {
                             >
                                 <img
                                     src={image}
-                                    className="absolute block w-3/5 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                    className="absolute block w-3/5 h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-lg"
                                     alt={`carousel-${index}`}
                                 />
                             </div>
