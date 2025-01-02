@@ -7,7 +7,7 @@ module.exports = {
     extend: {
       fontFamily: {
         fraktur: ['"UnifrakturMaguntia"', 'cursive'],
-        gothic: ['"Old English Text MT"', 'serif'],
+        gothic: ['"UnifrakturMaguntia"', 'serif'],
         modern: ['"Roboto"', 'sans-serif'],
       },
       colors: {
