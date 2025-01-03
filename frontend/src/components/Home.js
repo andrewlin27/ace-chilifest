@@ -83,7 +83,7 @@ const Home = () => {
           <Tickets />
         </section>
 
-        <section id="sponsors" className="py-12">
+        <section id="sponsors" className="">
           <Sponsors />
         </section>
 
