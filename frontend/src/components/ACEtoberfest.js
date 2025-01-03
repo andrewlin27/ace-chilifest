@@ -6,6 +6,7 @@ const images = [
     'acetoberfest_4.JPG',
     'acetoberfest_7.JPG',
     'acetoberfest_8.JPEG',
+    'acetoberfest_10.PNG',
     'acetoberfest_15.jpg',
 ];
 
