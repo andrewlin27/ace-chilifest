@@ -25,14 +25,14 @@ function ACEtoberfest() {
     };
 
     return (
-        <div className="py-12 flex flex-col justify-center items-center h-screen sm:h-[150vh] bg-gradient-to-b from-yellow-300 via-white to-yellow-500">
+        <div className="flex flex-col justify-center items-center h-[90vh] sm:h-[120vh] bg-gradient-to-b from-yellow-300 via-white to-yellow-500">
             <h1 className="text-center text-5xl sm:text-7xl font-gothic text-brown-800 tracking-wide">
-                ACEtoberfest<br />2024
+                acetoberfest<br />2024
             </h1>
 
             <div className="relative w-full mt-16">
                 {/* Carousel wrapper */}
-                <div className="relative z-30 h-56 flex justify-center items-center overflow-hidden rounded-lg md:h-96">
+                <div className="relative z-30 h-72 sm:h-[28rem] flex justify-center items-center overflow-hidden rounded-lg">
                     {images.map((image, index) => (
                         <div
                             key={index}
@@ -42,7 +42,7 @@ function ACEtoberfest() {
                         >
                             <img
                                 src={image}
-                                className="w-full sm:w-3/5 h-auto rounded-lg"
+                                className="w-full h-full object-contain rounded-lg"
                                 alt={`carousel-${index}`}
                             />
                         </div>

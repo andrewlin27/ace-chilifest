@@ -87,7 +87,7 @@ const Home = () => {
           <Sponsors />
         </section>
 
-        <section id="ace-toberfest" className="section min-h-screen">
+        <section id="ace-toberfest" className="section">
           <ACEtoberfest />
         </section>
 
