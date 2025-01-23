@@ -37,7 +37,7 @@ function Vegas() {
                     className="absolute top-0 left-0 w-full h-full object-cover"
                 />
                 <h1
-                    className="text-white text-7xl font-extrabold text-center tracking-widest drop-shadow-[0_5px_5px_rgba(255,0,0,0.8)] fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                    className="text-white text-7xl font-extrabold text-center tracking-widest drop-shadow-[0_5px_5px_rgba(255,0,0,0.8)] fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 pointer-events-none"
                     style={{
                         opacity: opacity,
                         transition: "opacity 0.1s ease-out",
