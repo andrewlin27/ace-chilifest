@@ -6,7 +6,7 @@ const Sponsors = () => {
     ];
 
   return (
-    <div className="py-32 container mx-auto text-center">
+    <div className="py-24 container mx-auto text-center">
         <h2 className="text-4xl font-bold mb-8">Thank you to our Sponsors!</h2>
         <div className="flex flex-wrap justify-center items-center gap-8">
             {sponsors.map((sponsor) => (
