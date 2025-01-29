@@ -9,7 +9,7 @@ const TicketDetails = () => {
       <div className="mb-6">
         <div className="mb-4">
           <h3 className="text-2xl font-semibold">Tier One</h3>
-          <p className="text-lg text-gray-700">Ends Jan 29, 2025</p>
+          <p className="text-lg text-gray-700">Ends Jan 28, 2025</p>
         </div>
         <div className="mb-4">
           <h3 className="text-2xl font-semibold">Tier Two</h3>
