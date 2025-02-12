@@ -28,7 +28,7 @@ const TicketDetails = () => {
             </ul>
           </li>
         </ul>
-        <p className="mb-3">
+        <p className="my-4">
           Your package will be delivered to your point of contact ACE member. 
           If you do not have one, we will contact you for delivery.
         </p>
