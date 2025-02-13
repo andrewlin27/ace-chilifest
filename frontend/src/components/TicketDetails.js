@@ -20,7 +20,7 @@ const TicketDetails = () => {
           <li>Admission to Chilifest</li>
           <li>T-Shirt</li>
           <li>
-            <span className="font-semibold">80's in ACEpen gear SOLD OUT</span>
+          80's in ACEpen gear <span className="font-semibold">SOLD OUT</span>
             <ul className="list-decimal list-inside ml-6">
               <li>Ski goggles *</li>
               <li>Fanny pack *</li>
