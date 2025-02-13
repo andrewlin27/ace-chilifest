@@ -20,7 +20,7 @@ const TicketDetails = () => {
           <li>Admission to Chilifest</li>
           <li>T-Shirt</li>
           <li>
-            <span className="font-semibold">Next 4 tickets get 80's in ACEpen gear!</span>
+            <span className="font-semibold">Next 1 ticket gets 80's in ACEpen gear!</span>
             <ul className="list-decimal list-inside ml-6">
               <li>Ski goggles *</li>
               <li>Fanny pack *</li>
@@ -54,7 +54,7 @@ const TicketDetails = () => {
 
       <div>
         <p className="text-sm">
-          * Gear is limited to the next 4 tickets sold
+          * Gear is limited to the next 1 ticket sold
         </p>
       </div>
     </div>
