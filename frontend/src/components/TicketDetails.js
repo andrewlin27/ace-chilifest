@@ -18,7 +18,7 @@ const TicketDetails = () => {
         <ul className='list-disc list-inside mb-1'>
           <li>Food and drinks at the ACE build</li>
           <li>Admission to Chilifest</li>
-          <li>T-Shirt</li>
+          <li>T-Shirt (while supplies last)</li>
           <li>
           80's in ACEpen gear <span className="font-semibold">SOLD OUT</span>
             <ul className="list-decimal list-inside ml-6">
