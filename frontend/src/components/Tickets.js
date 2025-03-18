@@ -42,7 +42,7 @@ const Tickets = () => {
       </div> */}
 
       {/* Tier Three 150/215 */}
-      {/* <div className="mb-12">
+      <div className="mb-12">
         <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-8">
           <div className='border-2 border-black rounded-md'>
             <stripe-buy-button
@@ -57,10 +57,10 @@ const Tickets = () => {
             ></stripe-buy-button>
           </div>
         </div>
-      </div> */}
+      </div>
 
       {/* Final Tickets 195/145 */}
-      <div className="mb-12">
+      {/* <div className="mb-12">
         <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-8">
           <div className='border-2 border-black rounded-md'>
             <stripe-buy-button
@@ -75,7 +75,7 @@ const Tickets = () => {
             ></stripe-buy-button>
           </div>
         </div>
-      </div>
+      </div> */}
       
       {/* Member/alumni 180 */}
       {/* <div className="mb-12">
