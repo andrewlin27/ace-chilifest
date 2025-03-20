@@ -15,6 +15,10 @@ const TicketDetails = () => {
           <h3 className="text-2xl font-semibold">Tier Two</h3>
           <p className="text-lg text-gray-700">Ends Feb 16, 2025</p>
         </div>
+        <div className="mb-4">
+          <h3 className="text-2xl font-semibold">Tier Three</h3>
+          <p className="text-lg text-gray-700">Ends March 19, 2025</p>
+        </div>
         <ul className='list-disc list-inside mb-1'>
           <li>Food and drinks at the ACE build</li>
           <li>Admission to Chilifest</li>

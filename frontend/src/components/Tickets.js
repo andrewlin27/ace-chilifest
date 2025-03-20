@@ -103,13 +103,13 @@ const Tickets = () => {
         <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-8">
           <div className='border-2 border-black rounded-md'>
             <stripe-buy-button
-              buy-button-id="buy_btn_1QXZJqK7YftLNASt4eSZkqM8"
+              buy-button-id="buy_btn_1R4XsHK7YftLNASteHMjwBph"
               publishable-key="pk_live_51QXBW9K7YftLNASt6Lhrq3FtAOmPkKlyC9QjRbtHGHXiJSCOyVqmy5jyjCbe6ZkBxuRHlstTUYilVOc8DWms3Td900Eq9lzcXN"
             ></stripe-buy-button>
           </div>
           <div className='border-2 border-black rounded-md'>
             <stripe-buy-button
-              buy-button-id="buy_btn_1QXZObK7YftLNASt5AetDWvt"
+              buy-button-id="buy_btn_1R4XsTK7YftLNAStWfEBAM2g"
               publishable-key="pk_live_51QXBW9K7YftLNASt6Lhrq3FtAOmPkKlyC9QjRbtHGHXiJSCOyVqmy5jyjCbe6ZkBxuRHlstTUYilVOc8DWms3Td900Eq9lzcXN"
             ></stripe-buy-button>
           </div>
